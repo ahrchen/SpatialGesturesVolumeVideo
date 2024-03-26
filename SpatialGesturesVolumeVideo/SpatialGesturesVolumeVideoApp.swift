@@ -6,9 +6,15 @@
 //
 
 import SwiftUI
+import RealityKitContent
 
 @main
 struct SpatialGesturesVolumeVideoApp: App {
+    
+    init() {
+        RealityKitContent.GestureComponent.registerComponent()
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

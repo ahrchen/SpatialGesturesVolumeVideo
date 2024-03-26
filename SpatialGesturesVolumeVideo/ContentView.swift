@@ -27,6 +27,7 @@ struct ContentView: View {
                     scene.transform.scale = [uniformScale, uniformScale, uniformScale]
                 }
             }
+            .installGestures()
             .gesture(TapGesture().targetedToAnyEntity().onEnded { _ in
                 enlarge.toggle()
             })

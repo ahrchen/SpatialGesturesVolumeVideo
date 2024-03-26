@@ -45,6 +45,13 @@ def Xform "Root"
         {
             uniform token info:id = "RealityKit.InputTarget"
         }
+
+        def RealityKitCustomComponent "RealityKitContent_GestureComponent"
+        {
+            uniform token info:id = "RealityKitContent.GestureComponent"
+            bool pivotOnDrag = 0
+            bool preserveOrientationOnPivotDrag = 0
+        }
     }
 
     def "GridMaterial" (
